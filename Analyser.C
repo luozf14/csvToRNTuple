@@ -5,10 +5,7 @@
 #include <fstream>
 #include <memory>
 
-using RNTupleModel = ROOT::Experimental::RNTupleModel;
 using RNTupleReader = ROOT::Experimental::RNTupleReader;
-using RNTupleWriter = ROOT::Experimental::RNTupleWriter;
-using ENTupleInfo = ROOT::Experimental::ENTupleInfo;
 using ENTupleShowFormat = ROOT::Experimental::ENTupleShowFormat;
 
 int main(int argc, char** argv) 
@@ -23,8 +20,8 @@ int main(int argc, char** argv)
     char const* kNTupleFileName = argv[1];
 
     auto ntuple = RNTupleReader::Open("Data", kNTupleFileName);
-    ntuple->PrintInfo(ENTupleInfo::kStorageDetails);
     ntuple->PrintInfo();
+    std::cout<<"The third entry is shown below:"<<std::endl;
     ntuple->Show(2, ENTupleShowFormat::kCompleteJSON);
     return 0;
 }
