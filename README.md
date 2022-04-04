@@ -2,13 +2,13 @@
 A program that takes as input a CSV file and generates a RNTuple ROOT file. 
 
 ## Features
-It take the  first row of the input CSV file as a header and automatically parses it. You do not have to know the number, name or type of the columns.
+It takes the first row of the input CSV file as a header and automatically parses it. You do not have to know the number, name or type of the columns.
 
 ## How to compile
 
 ### Prerequisites
 
-The program is only tested on ROOT 6.26.00. If you are able to build ROOT6.26.00, then you have all the prerequisites to run this program. 
+The program is only tested on ROOT 6.26.00. If you are able to build ROOT 6.26.00, then you have all the prerequisites to run this program. 
 
 ### Compiling
 
